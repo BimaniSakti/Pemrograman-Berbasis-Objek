@@ -50,7 +50,7 @@ def pinjamanMenu() :
 def main() :
     header1 = ["Nama Debitur", "No. KTP", "Limit Pinjaman"]
     header2 = ["Nama Debotur", "Pinjaman", "Bunga", "Bulan", "Angsuran/bln"]
-    total_debitur = [["Bouyem", "123", 5000000], ["Sukiyem", "234", 1000000], ["Tono", "345", 2000000]]
+    total_debitur = [["Bouyem", 123, 5000000], ["Sukiyem", 234, 1000000], ["Tono", 345, 2000000]]
     total_pinjaman = []
     
     while True :
@@ -80,7 +80,7 @@ def main() :
                             print(f"\n{input_nama} tidak ada di daftar debitur\n")
                         the_name.clear()
                     elif input_menu == "3" :
-                        input_ktp = input("Masukkan No. KTP Baru : ")
+                        input_ktp = int(input("Masukkan No. KTP Baru : "))
                         
                         for value in (total_debitur) :
                             the_ktp = []
